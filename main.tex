@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashton Harrell
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ashton Harrell} \\ \vspace{1pt}
+    \small 318-334-4811 $|$ \href{mailto:ashx004@gmail.com}{\underline{ashx004@gmail.com}} $|$
+    \href{https://linkedin.com/in/axharrell}{\underline{linkedin.com/in/axharrell}} $|$
+    \href{https://github.com/ashx004}{\underline{github.com/ashx004}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Louisiana Tech University}{Ruston, LA}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2023 -- Nov. 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Artificial Intelligence, Software Engineering, Database Management Systems, Programming Languages, Intro. to Cybersecurity, Adv. Data Structures \& Algorithms, Intro. to Graph Theory}
+        
+        \resumeItem{\textbf{Honors and Awards:} 3rd Place in LwC Freshman Exhibition 2024, Recipient of TC Energy STEM Scholarship}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Resident Assistant}{June 2023 -- Present}
+      {Louisiana Tech University}{Ruston, LA}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained residential communities across campus housing and apartment facilities}
+        \resumeItem{Planned, organized, and executed department- and building-scale events with up to 100+ residents}
+        \resumeItem{Enforced university policies among residents and staff; administered prospective student housing tours}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Lead Sales Associate}{May 2023 - Aug. 2023}
+        {Dollar General}{Epps, LA}
+        \resumeItemListStart
+            \resumeItem{Administered POS transactions with customers and distributors}
+            \resumeItem{Managed the facilities in the absence of a superior}
+            \resumeItem{Supervised and trained new employees, and ensured others were completing their work as tasked}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Zono} $|$ \emph{TypeScript, React Native, Expo, Supabase, Node.js}}{Spring 2026}
+          \resumeItemListStart
+            \resumeItem{Collaborated in a team of 4 to build a cross-platform iOS/Android mobile app for a Software Engineering course}
+            \resumeItem{Implemented live GPS tracking so users can view themselves and friends on a real-time map}
+            \resumeItem{Integrated Supabase for backend services including authentication, database, and real-time data sync}
+            \resumeItem{Supported in-app messaging and social interactions between users}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Artificial Intelligence Assignments} $|$ \emph{Java}}{Fall 2025}
+          \resumeItemListStart
+            \resumeItem{Implemented a 3-layer neural network (4-3-2) from scratch using gradient descent and backpropagation, training across 6 epochs}
+            \resumeItem{Extended the training engine to classify handwritten digits from the MNIST dataset with multiple user-selectable evaluation modes}
+            \resumeItem{Built an object-oriented \textit{Othello} game with a heuristic-driven AI using minimax search and alpha-beta pruning; exposed configurable search depth via command-line flags}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{UjGram} $|$ \emph{Python, HTML, CSS, MySQL, Docker}}{Apr. 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Full-stack social media web application developed for CSC4303 Database Management Systems}
+            \resumeItem{Flask handles application logic and uses HTML templates for web rendering and CSS for styling, while the MySQL backend stores all user and website data}
+            \resumeItem{Users can create accounts with different roles, create and publish posts, like, comment, and share other posts}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, TypeScript, JavaScript, SQL, PostgreSQL, HTML/CSS, Haskell, Rust} \\
+     \textbf{Frameworks \& Libraries}{: React Native, Expo, Node.js, Flask} \\
+     \textbf{Databases}{: Supabase, PostgreSQL} \\
+     \textbf{Developer Tools}{: Git, GitHub, VS Code, Docker, NeoVim (Vim), } \\
+     \textbf{Concepts}{: Neural Networks, Machine Learning, Minimax/Alpha-Beta Pruning, OOP, IPC, REST APIs, Agile/Scrum}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
