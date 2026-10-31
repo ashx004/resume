@@ -33,7 +33,6 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -60,23 +59,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-3pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -96,7 +84,6 @@
     \href{https://github.com/ashx004}{\underline{github.com/ashx004}}
 \end{center}
 
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -104,13 +91,10 @@
       {Louisiana Tech University}{Ruston, LA}
       {Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2023 -- Nov. 2026}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Coursework:} Artificial Intelligence, Software Engineering, Database Management Systems, Programming Languages, Intro. to Cybersecurity, Adv. Data Structures \& Algorithms, Intro. to Graph Theory}
-        
-        \resumeItem{\textbf{Honors and Awards:} 3rd Place in LwC Freshman Exhibition 2024, Recipient of TC Energy STEM Scholarship}
-        
+        \resumeItem{\textbf{Relevant Coursework:} Artificial Intelligence, Software Engineering, Senior Capstone, Database Management Systems, Programming Languages, Intro. to Cybersecurity, Advanced Data Structures \& Algorithms, Intro. to Graph Theory}
+        \resumeItem{\textbf{Honors and Awards:} 3rd Place in LwC Freshman Exhibition 2024; Recipient of TC Energy STEM Scholarship}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -126,57 +110,57 @@
       \resumeItemListEnd
 
     \resumeSubheading
-        {Lead Sales Associate}{May 2023 - Aug. 2023}
+        {Lead Sales Associate}{May 2023 -- Aug. 2023}
         {Dollar General}{Epps, LA}
         \resumeItemListStart
             \resumeItem{Administered POS transactions with customers and distributors}
-            \resumeItem{Managed the facilities in the absence of a superior}
-            \resumeItem{Supervised and trained new employees, and ensured others were completing their work as tasked}
+            \resumeItem{Managed facility operations in the absence of a supervisor}
+            \resumeItem{Supervised and trained new employees while ensuring assigned work was completed}
+        \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
+  \resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\textbf{Zono} $|$ \emph{TypeScript, React Native, Expo, Supabase, Node.js}}{Spring 2026}
-          \resumeItemListStart
-            \resumeItem{Collaborated in a team of 4 to build a cross-platform iOS/Android mobile app for a Software Engineering course}
-            \resumeItem{Implemented live GPS tracking so users can view themselves and friends on a real-time map}
-            \resumeItem{Integrated Supabase for backend services including authentication, database, and real-time data sync}
-            \resumeItem{Supported in-app messaging and social interactions between users}
-          \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Catalyst} $|$ \emph{TypeScript, Next.js, React, Firebase, Google GenAI}}{Summer 2026 - Present}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack AI study companion that centralizes course materials, deadlines, notes, and syllabi for college students}
+        \resumeItem{Built AI-powered tools to generate quizzes, flashcards, personalized study plans, and contextual academic support from uploaded materials}
+        \resumeItem{Implemented OCR and document-processing workflows, calendar and email reminders, two-factor authentication, analytics dashboards, Docker deployment, and automated testing}
+      \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{Artificial Intelligence Assignments} $|$ \emph{Java}}{Fall 2025}
-          \resumeItemListStart
-            \resumeItem{Implemented a 3-layer neural network (4-3-2) from scratch using gradient descent and backpropagation, training across 6 epochs}
-            \resumeItem{Extended the training engine to classify handwritten digits from the MNIST dataset with multiple user-selectable evaluation modes}
-            \resumeItem{Built an object-oriented \textit{Othello} game with a heuristic-driven AI using minimax search and alpha-beta pruning; exposed configurable search depth via command-line flags}
-          \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Transformer Recreation} $|$ \emph{Python, PyTorch, NLP}}{Summer 2026}
+      \resumeItemListStart
+        \resumeItem{Implemented a Transformer language model from scratch in PyTorch, including scaled dot-product attention, multi-head attention, positional encoding, and encoder--decoder components}
+        \resumeItem{Built an end-to-end NLP training pipeline that downloads and preprocesses IWSLT'14 English--German data, trains a BPE tokenizer, and creates batched token sequences}
+        \resumeItem{Developed autoregressive GPT-style text generation with checkpointing, temperature sampling, and top-k decoding to evaluate language-generation capabilities}
+      \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{UjGram} $|$ \emph{Python, HTML, CSS, MySQL, Docker}}{Apr. 2026 -- May 2026}
-          \resumeItemListStart
-            \resumeItem{Full-stack social media web application developed for CSC4303 Database Management Systems}
-            \resumeItem{Flask handles application logic and uses HTML templates for web rendering and CSS for styling, while the MySQL backend stores all user and website data}
-            \resumeItem{Users can create accounts with different roles, create and publish posts, like, comment, and share other posts}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
+    \resumeProjectHeading  
+      {\textbf{Zono} $|$ \emph{TypeScript, React Native, Expo, Supabase, Ollama}}{Spring 2026}  
+      \resumeItemListStart  
+        \resumeItem{Collaborated on a cross-platform mobile application for real-time location sharing, messaging, and interactive activities}  
+        \resumeItem{Developed Android and iOS features using React Native and Expo, with Supabase supporting application data and backend services}  
+        \resumeItem{Integrated an optional locally hosted AI chatbot through Ollama and configured environment-based API credentials}  
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, TypeScript, JavaScript, SQL, PostgreSQL, HTML/CSS, Haskell, Rust} \\
-     \textbf{Frameworks \& Libraries}{: React Native, Expo, Node.js, Flask} \\
-     \textbf{Databases}{: Supabase, PostgreSQL, NoSQL} \\
-     \textbf{Developer Tools}{: Git, GitHub, VS Code, Docker, NeoVim (Vim), Ollama, Firebase} \\
-     \textbf{Concepts}{: Neural Networks, Machine Learning, OOP, IPC/RPC, REST APIs, Agile/Scrum, RAG, NLP}
+     \textbf{Languages}{: Java, Python, C/C++, TypeScript, SQL, HTML/CSS, Rust} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, React, Expo, Node.js, Flask, PyTorch} \\
+     \textbf{Databases}{: Firebase, Supabase, PostgreSQL, NoSQL, MySQL} \\
+     \textbf{Developer Tools}{: Git, GitHub, VS Code, Docker, NeoVim (Vim), Ollama} \\
+     \textbf{Concepts}{: Neural Networks, Machine Learning, OOP, REST APIs, Agile/Scrum, RAG, NLP}
     }}
  \end{itemize}
-%-------------------------------------------
+
 \end{document}
